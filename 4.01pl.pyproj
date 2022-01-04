@@ -26,7 +26,7 @@
   <ItemGroup>
     <Content Include="gif.gif" />
     <Content Include="giphy %281%29.gif" />
-    <Content Include="giphy.gif" />
+    <Content Include="giphy %282%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
