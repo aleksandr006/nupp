@@ -4,6 +4,7 @@ def klikker(event):
     global klik
     klik+=1
     lbl.configure(text=klik)
+    aken.geometry(str(aken.winfo_width()+10)+"x"+str(aken.winfo_height()+10))
 def klikker_minus(event):
     global klik
     klik-=1
@@ -17,11 +18,14 @@ def valik():
     valik_=var.get()
     lbl.configure(text=valik_)
     txt.insert(0,valik_)
+def vihd(event):
+    aken.destroy()
 aken=Tk()
 aken.title("Akna nimetus")
 aken.geometry("600x500")
 knopka=Button(aken,text="ja knopka",font="Arial 20",fg="red",bg="lightblue",height=4,width=20,relief=GROOVE)
-knopka.bind()
+knopka.bind(aken.destroy)
+
 
 nupp=Button(aken,text="Mina olen nupp\nValjuta mind!",font="Arial 20",fg="red",bg="lightblue",height=4,width=20,relief=GROOVE)#RAISED, SUNKEN
 nupp.bind("<Button-1>",klikker)
